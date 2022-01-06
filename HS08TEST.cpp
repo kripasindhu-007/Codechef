@@ -1,4 +1,5 @@
 #include<iostream>
+#include<stdio.h>
 using namespace std;
 int main()
 {
@@ -6,15 +7,15 @@ int main()
     float balance;
     cin>>amount;
     cin>>balance;
-    if(balance<amount){
-        cout<<balance;
+    if(balance<amount+0.5){
+        printf("%.2f",balance);
     }
-    else if(amount%10==5||amount%10==0){
+    else if(amount%5==0){
         balance=balance-amount-.50;
-        cout<<balance;
+        printf("%.2f",balance);
     }
     else{
-        cout<<balance;
+        printf("%.2f",balance);
     }
 return 0;
 }
